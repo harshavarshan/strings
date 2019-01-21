@@ -1,0 +1,14 @@
+<script>
+	function search_word(str1, str2){
+if(str2 === 'class'){
+var count = (str1.match(/fox/g) || []).length;
+return str2 + ' was found ' + count + 'times';
+}
+if(str2 === 'aa'){
+var count = (str1.match(/aa/g) || []).length;
+return str2 + ' was found ' + count + ' times';
+}
+
+};
+console.log(search_word('welcome to class', 'class'));
+</script>

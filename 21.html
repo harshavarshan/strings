@@ -1,0 +1,14 @@
+<script>
+	function repeat_string(str, n){
+var res = '';
+if(typeof n === 'number'){
+res = str.repeat(n);
+return res;
+}
+if(typeof n === 'undefined'){
+return 'Error in string or count.';
+}
+
+};
+console.log(repeat_string('a', 4));
+</script>

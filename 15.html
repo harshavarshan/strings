@@ -1,0 +1,11 @@
+<script>
+	function humanize_format(n) {
+var arr = ["th","st","nd","rd"];
+return (!n)?"":(n<4)?n+""+arr[n]:(n<10)? (n+""+arr[0]):(n +""+arr[n % 10]);
+}
+console.log(humanize_format()); 
+console.log(humanize_format(1)); 
+console.log(humanize_format(8)); 
+console.log(humanize_format(301)); 
+console.log(humanize_format(402));
+</script>

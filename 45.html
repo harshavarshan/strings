@@ -1,0 +1,23 @@
+<script>
+	function humanize(n){
+var suf = ['th', 'st', 'nd', 'rd'];
+var last = String(n).substr(-1);
+for (var i = 0; i < suf.length; i++) {
+if(last < 4) return n + suf[last];
+
+}
+};
+console.log(humanize(1));
+console.log(humanize(20));
+console.log(humanize(302));function humanize(n){
+var suf = ['th', 'st', 'nd', 'rd'];
+var last = String(n).substr(-1);
+for (var i = 0; i < suf.length; i++) {
+if(last < 4) return n + suf[last];
+
+}
+};
+console.log(humanize(1));
+console.log(humanize(20));
+console.log(humanize(302));
+</script>

@@ -1,0 +1,26 @@
+<script>
+	function insert(str1, str2, n) {
+var res = '';
+
+if(typeof n === 'undefined' && typeof str2 === 'string'){
+res = str2 + str1;
+return res;
+}
+if(typeof n === 'undefined') {
+res = str1;
+return res;
+}
+else {
+String.prototype.insertAt=function(index, string) {
+return this.substr(0, index) + string + this.substr(index);
+}
+var last = '';
+last = str1.insertAt(n, str2);
+return last;
+}
+};
+
+console.log(insert('We are doing some exercises.'));
+console.log(insert('We are doing some exercises.','JavaScript '));
+c
+</script>

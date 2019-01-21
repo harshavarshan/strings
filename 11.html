@@ -1,0 +1,14 @@
+<script>
+	function Camelize(input) {
+
+var arr = input.split(" ");
+var output = [];
+for (var i = 0; i < arr.length - 1; i++) {
+output[i] = arr[i].replace(arr[i].charAt(0), arr[i].charAt(0).toUpperCase());
+
+}
+document.write(output.join(""));
+
+}
+Camelize("JavaScript experiment ");
+</script>

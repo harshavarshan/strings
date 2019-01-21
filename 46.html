@@ -1,0 +1,11 @@
+<script>
+	function startsWith(str1, str2){
+var str1 = str1.split(' ');
+for (var i = 0; i < str1.length; i++) {
+if(str1[0] === str2) return true;
+if(str1[0] != str2) return false;
+}
+};
+console.log(startsWith('js string exercises', 'js'));
+console.log(startsWith('js string exercises', 'j'));
+</script>

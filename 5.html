@@ -1,0 +1,9 @@
+<script>
+	function abbrev_name (str) {
+var r = str.split(' ');
+var res = r[1];
+res = res.substring(0,1);
+return r[0] + ' ' + res + '.';
+}
+console.log(abbrev_name("Robin Singh"));
+</script>

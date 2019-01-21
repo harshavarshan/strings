@@ -1,0 +1,13 @@
+<script>
+	function strip_html_tags(str){
+return str.replace(/
+
+/g, '')
+.replace(//g, '')
+.replace(//g, '')
+.replace(/<\/em>/g, '')
+.replace(/<\/strong>/g, '')
+.replace(/<\/p>/g, '')
+};
+console.log(strip_html_tags('PHP Exercises'));
+</script>

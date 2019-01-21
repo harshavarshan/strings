@@ -1,0 +1,13 @@
+<script>
+	function text_truncate(str, n, str2){
+if(typeof n === 'undefined'){
+return str;
+}
+else{
+return str.substr(0, n-3) + '...' + str2;
+}
+};
+
+console.log(text_truncate('We are doing JS string exercises.'));
+console.log(text_truncate('We are doing JS string exercises.',19));
+</script>

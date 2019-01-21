@@ -1,0 +1,14 @@
+<script>
+	function subStrAfterChars(str1, str2, str3){
+var res = '';
+if(str3 === 'a'){
+return res = str1.substring(str1.indexOf('E') + 1);
+}
+if(str3 === 'b'){
+return res = str1.substring(0, str1.indexOf(':'));
+}
+
+};
+console.log(subStrAfterChars('w3resource: JavaScript Exercises', ':','a'));
+console.log(subStrAfterChars('w3resource: JavaScript Exercises', 'E','b'));
+</script>

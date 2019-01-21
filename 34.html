@@ -1,0 +1,11 @@
+<script>
+	function sentenceCase(str){
+var low = str.toLowerCase().split(' ');
+var res = '';
+for (var i = 0; i < low.length; i++) {
+res += low[i].substring(0, 1).toUpperCase() + low[i].substring(1) + ' ';
+}
+return res;
+};
+console.log(sentenceCase('Harsha vardhan is an good photographer'));
+</script>

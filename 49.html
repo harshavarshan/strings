@@ -1,0 +1,13 @@
+<script>
+	function guid(n) {
+var arr=[];
+chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+if (!n) return chars;
+for(var i = 0; i < n; i++) {
+arr.push(chars[Math.floor(Math.random()*chars.length)]);
+}
+return arr.join('');
+}
+console.log(guid());
+console.log(guid(15));
+</script>

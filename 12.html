@@ -1,0 +1,12 @@
+<script>
+	function uncamelize(str, n) {
+var res = str.replace(/[A-Z]/g, n + 'w');
+if(typeof n === 'undefined') {
+return str.replace(/[A-Z]/g, ' ' + 'w')
+}
+return res;
+
+};
+
+console.log(uncamelize('helloWorld'));
+</script>

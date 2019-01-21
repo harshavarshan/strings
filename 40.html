@@ -1,0 +1,11 @@
+<script>
+	function unCapitalize_Words(str){
+var str = str.split(' ');
+var res = '';
+for (var i = 0; i < str.length; i++) {
+res += str[i].substr(0, 1).toLowerCase() + str[i].substr(1) + ' ';
+}
+return res
+};
+console.log(unCapitalize_Words('Js String Exercises'));
+</script>

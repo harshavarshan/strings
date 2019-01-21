@@ -1,0 +1,8 @@
+<script>
+	function hexaToASCII (str) {
+return str.replace(/.{1,2}/g, (temp) => String.fromCharCode(parseInt(temp, 16)));
+}
+
+console.log(hexaToASCII('3132'));
+console.log(hexaToASCII('313030'));
+</script>

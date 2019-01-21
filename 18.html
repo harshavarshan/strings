@@ -1,0 +1,16 @@
+<script>
+	const escape_HTML = html_str => {
+    const chars_to_replace = {
+        '&': '&',
+        '<': '<',
+        '>': '>',
+        '"': '"',
+        "'": "'",
+        '/': '/',
+        '`': '`',
+        '=': '='
+    };
+    return html_str.replace(/[&<>"'`=\/]/g, tag => chars_to_replace[tag]);
+};
+console.log(escape_HTML(''));
+</script>

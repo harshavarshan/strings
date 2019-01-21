@@ -1,0 +1,8 @@
+<script>
+	function protect_email (str) {
+var before = str.split('_');
+var after = str.split('@');
+return before[0] + '...' + '@' + after[1];
+}
+console.log(protect_email("vardhanharsha@.com"));
+</script>

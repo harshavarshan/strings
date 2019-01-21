@@ -1,0 +1,15 @@
+<script>
+	function formatted_string(str1, str2, shit){
+var res = '';
+if(shit === 'l'){
+res = str1.substr(0, 1);
+return res + str2;
+}
+if(shit === ''){
+res = str1.slice(-5);
+return str2 + res;
+}
+};
+console.log(formatted_string('0000',123,'l'));
+console.log(formatted_string('00000000',123,''));
+</script>
